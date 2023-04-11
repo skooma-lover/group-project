@@ -1,0 +1,211 @@
+@font-face {
+	font-family: Rubik-Regular;
+	src: url('/project work/fonts/Rubik-Regular.ttf');
+}
+@font-face{
+	font-family: SourceSansPro-Regular;
+	src: url('/project work/fonts/SourceSansPro-Regular.ttf');
+}
+ @font-face{
+	font-family:tahoma;
+	src: url('/project work/fonts/tahoma.ttf/');
+}
+*, *:after, *:before {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   transition: .5s ease-in-out;
+   /* добавим плавность переходов для всех элементов страницы*/
+}
+ul {
+   list-style: none;
+   
+}
+a {
+   text-decoration: none;
+   outline: none;
+}
+body {
+   background: #b1d2da;
+}
+header {
+   width: 100%;
+   padding: 15px 0;
+   margin-bottom: 30px;
+   position: relative;
+}
+/* меню */
+
+#menu li {
+   display: inline-block;
+   margin-right: 1.5%;
+   margin-left: 1.5%;
+   background: #dadada;
+   width: 13.5%;
+   text-align:center;
+     border: 2px solid black;
+  border-radius: 25px;
+  box-shadow: 0px 15px 15px 1px rgba(0, 0, 0, .5);
+   
+}
+#menu a {
+   color: #111;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 600;
+   display: block;
+   line-height: 40px;
+}
+#menu a:hover {
+   color: #EF5A42;
+}
+#menu li:last-child {
+   margin-right: 0;
+}
+
+.logo {
+	margin-top: 10px;
+	width:50px;
+	height:50px;
+
+	
+}
+.main {
+
+	margin:4%;
+	background:#dadada;
+	padding: 2%;
+	box-shadow: 0px 15px 15px 10px rgba(0, 0, 0, .5);
+}
+h1 {
+	text-align:center;
+}
+h2 {
+	margin-top: 2%;
+	margin-bottom:2%;
+	text-align:left;
+}
+.icon {
+	margin-top:10%;
+	width:90%;
+	height:90%;
+	
+	
+
+	
+}
+.company{
+	text-align:center;
+}
+.company_list .company {
+	
+	display: inline-block;
+   margin-right: 1.5%;
+   margin-left: 1.5%;
+   margin-bottom:3%;
+   background: white;
+   width: 25%;
+   text-align:center;
+        border: 2px solid black;
+  border-radius: 25px;
+
+}
+.company_list a {
+   color: #111;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 600;
+   display: block;
+   line-height: 40px;
+}
+.company_list a:hover {
+   color: #EF5A42;
+}
+.company_list {
+	text-align:center;
+}
+footer{
+	background:#dadada;
+	height:200px;
+	box-shadow: 0px 15px 15px 10px rgba(0, 0, 0, .5);
+	 padding: 30px 30px;
+	 font-size: 20px;
+}
+.nav-toggle {
+   display: none;
+   position: relative;
+   float: center;
+   width: 100px;
+   height: 100px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 40%;
+   border-radius: 100px;
+   border: 2px solid black;
+   background: url('C://Users/sofgr/Desktop/project/img/logo.png');
+   background-size: cover;
+   cursor: pointer;
+}
+
+
+/* класс, который будет добавлен в верхнему меню при нажатии на кнопку и покажет скрытое меню*/
+#menu.active {
+   max-height: 100%;
+}
+@media (max-width: 768px) {
+   /* показываем кнопку для переключения верхней навигации */
+   .nav-toggle {
+      display: block;
+   }
+   header {
+      padding: 10px 0;
+   }
+   /* скрываем верхнее меню, отменяем обтекание, позиционируем его, сместив на высоту шапки сайта */
+   #menu {
+      max-height: 0;
+		background: none;
+		float: none;
+		position: relative;
+		top: 0px;
+		overflow: hidden;
+		
+		right: 0;
+		left: 0px;
+		margin: 0;
+		padding: 0;
+		z-index: 3;
+		width: 100%;
+		color: white;
+		font-size: 14px;
+		margin-bottom: 2%;
+   }
+ 
+   #menu li {
+      display: inline-block;
+      text-align: center;
+	  width:46%;
+
+   }
+ 
+.company_list .company {
+
+   width: 35%;
+
+}
+}
+input {
+	width:250px;
+	height:30px;
+	padding: 1%;
+	margin-bottom:2%;
+	font-size: 16px;
+}
+button {
+		width:100px;
+	height:30px;
+	font-size: 16px;
+	margin-bottom:2%;
+}
+p{
+	font-size: 20px;
+}
